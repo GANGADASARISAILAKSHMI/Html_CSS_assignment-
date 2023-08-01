@@ -1,0 +1,680 @@
+----Task1 internal ---
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flexbox Layout</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      height: 80px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #333;
+      color: #fff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      padding: 0;
+    }
+
+    nav li {
+      margin: 0 10px;
+    }
+
+    main {
+      min-height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #f2f2f2;
+    }
+
+    footer {
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1Hi Sailakshmi Reddy </h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </main>
+  <footer>
+   End of the page
+  </footer>
+</body>
+</html>
+
+---Task1 inline---
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flexbox Layout</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif;">
+  <header style="height: 80px; display: flex; justify-content: space-around; align-items: center; background-color: #333; color: #fff;">
+    <nav>
+      <ul style="list-style: none; display: flex; padding: 0;">
+        <li style="margin: 0 10px;">Home</li>
+        <li style="margin: 0 10px;">About</li>
+        <li style="margin: 0 10px;">Contact</li>
+      </ul>
+    </nav>
+  </header>
+  <main style="min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #f2f2f2;">
+    <h1>Hi sailakshmi reddy </h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </main>
+  <footer style="height: 60px; display: flex; justify-content: center; align-items: center; background-color: #333; color: #fff;">
+   End of the page
+  </footer>
+</body>
+</html>
+
+
+---task1 external---
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flexbox Layout</title>
+  <link rel="stylesheet" href="task1.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Hi Sailakshmi Reddy </h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </main>
+  <footer>
+    End of the page
+  </footer>
+</body>
+</html>
+
+---task1.css---
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+main {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+
+footer {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+}
+
+
+---task2---
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flex Items Alignment</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    main {
+      min-height: 400px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f2f2f2;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+    }
+
+    .box:nth-child(1) {
+      background-color: #ff6347;
+    }
+
+    .box:nth-child(2) {
+      background-color: #add8e6;
+    }
+
+    .box:nth-child(3) {
+      background-color: #90ee90;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </main>
+  <footer>
+    End of page
+  </footer>
+</body>
+</html>
+
+
+----alternate way---
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flex Items Alignment</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    main {
+      min-height: 400px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f2f2f2;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+    }
+
+    .box1 {
+      background-color: #ff6347;
+    }
+
+    .box2 {
+      background-color: #add8e6;
+    }
+
+    .box3 {
+      background-color: #90ee90;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+  </main>
+  <footer>
+    End of page
+  </footer>
+</body>
+</html>
+
+
+----task3----
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Positioning Elements</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      position: relative;
+      width: 600px;
+      height: 400px;
+      margin: 50px auto;
+      background-color: #f2f2f2;
+      border: 1px solid #ddd;
+      overflow: hidden;
+    }
+
+    img {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      margin: 0;
+      max-width: 200px;
+      max-height: 200px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .first {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      margin: 0;
+      font-size: 18px;
+      color: #333;
+    }
+
+    . second {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      margin: 0;
+      font-size: 24px;
+      color: #fff;
+      background-color: #007bff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="dq.jpg" alt="DQ Image">
+    <p class="first">First paragraph of text positioned at the bottom left corner of the container.</p>
+    <p class="second">Second paragraph centered horizontally and vertically within the container.</p>
+  </div>
+</body>
+</html>
+
+---alternate way---
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Positioning Elements</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-gap: 10px;
+      width: 600px;
+      height: 400px;
+      margin: 50px auto;
+      background-color: #f2f2f2;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+    }
+
+    img {
+      grid-column: 2;
+      grid-row: 1;
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .first {
+      grid-column: 1;
+      grid-row: 2;
+      margin: 15px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .second {
+      grid-column: span 2;
+      grid-row: span 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px;
+      font-size: 24px;
+      color: #fff;
+      background-color: #007bff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="DQ.jpg" alt="DQ Image">
+    <p class="first">First paragraph of text positioned at the bottom left corner of the container.</p>
+    <p class="second">Second paragraph centered horizontally and vertically within the container.</p>
+  </div>
+</body>
+
+----task4---
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fixed Navigation Bar</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      padding: 15px;
+      z-index: 1000;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar li {
+      padding: 0 15px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    
+    .content {
+      margin-top: 80px; 
+      padding: 20px;
+      text-align: center;
+    }
+
+   
+    a {
+      text-decoration: none;
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h1>Hi Sai</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae neque sit amet felis blandit consectetur. Proin vel facilisis est. Aenean a ante vel mauris feugiat iaculis vel at erat. Sed vitae ligula sit amet risus facilisis iaculis sit amet eu ipsum. Suspendisse potenti.</p>
+    <p>Nam ut quam nec velit tincidunt facilisis vel in metus. Curabitur interdum laoreet lorem, a vulputate est feugiat id. Duis non ullamcorper velit, at posuere nunc. Ut ac libero vitae mi dictum tincidunt vel a arcu. Cras et facilisis urna, non consectetur neque.</p>
+    <p>Donec vehicula, arcu vel rhoncus posuere, neque lacus finibus quam, vitae lacinia ligula metus ac turpis. Duis vel leo vel quam iaculis facilisis ut eu felis. Nam vitae leo nec sapien rhoncus convallis. Nulla facilisi.</p>
+    <p><a href="#">Learn more about us</a></p>
+  </div>
+</body>
+</html>
+
+----alternate way---
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fixed Navigation Bar</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar li {
+      padding: 0 20px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: #007bff;
+    }
+
+   
+    .content {
+      margin-top: 100px; 
+      padding: 40px;
+      text-align: center;
+    }
+
+    
+    a {
+      text-decoration: none;
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h1>Hi Sai</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae neque sit amet felis blandit consectetur. Proin vel facilisis est. Aenean a ante vel mauris feugiat iaculis vel at erat. Sed vitae ligula sit amet risus facilisis iaculis sit amet eu ipsum. Suspendisse potenti.</p>
+    <p>Nam ut quam nec velit tincidunt facilisis vel in metus. Curabitur interdum laoreet lorem, a vulputate est feugiat id. Duis non ullamcorper velit, at posuere nunc. Ut ac libero vitae mi dictum tincidunt vel a arcu. Cras et facilisis urna, non consectetur neque.</p>
+    <p>Donec vehicula, arcu vel rhoncus posuere, neque lacus finibus quam, vitae lacinia ligula metus ac turpis. Duis vel leo vel quam iaculis facilisis ut eu felis. Nam vitae leo nec sapien rhoncus convallis. Nulla facilisi.</p>
+    <p><a href="#">Learn more about us</a></p>
+  </div>
+</body>
+</html>
+
+------task5-----
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Gallery with Hover Effect</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      max-width: 800px;
+      margin: 50px auto;
+    }
+
+    .image-container {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .thumbnail {
+      display: block;
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .thumbnail:hover {
+      transform: scale(1.2);
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .image-container:hover .overlay {
+      opacity: 1;
+    }
+
+    .caption {
+      color: #fff;
+      font-size: 18px;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery">
+    <div class="image-container">
+      <img class="thumbnail" src="DQ.jpg" alt="Image 1">
+      <div class="overlay">
+        <div class="caption">Image 1</div>
+      </div>
+    </div>
+    <div class="image-container">
+      <img class="thumbnail" src="DQ.jpg" alt="Image 2">
+      <div class="overlay">
+        <div class="caption">Image 2</div>
+      </div>
+    </div>
+    <div class="image-container">
+      <img class="thumbnail" src="DQ.jpg" alt="Image 3">
+      <div class="overlay">
+        <div class="caption">Image 3</div>
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>
+
